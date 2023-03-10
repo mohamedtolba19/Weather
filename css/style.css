@@ -1,0 +1,54 @@
+body
+{
+    background-image: url(../images/tom-barrett-hgGplX3PFBg-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+  
+}
+nav
+{
+    background-color: #1e202b;
+  
+  
+}
+.navbar-brand img 
+{
+    width: 50px;
+}
+#searchInput
+{
+    background-color: #1e202b !important;
+    outline: none;
+    border: 1px solid #1e202b;
+    border-radius: 10px;
+    color: white;
+}
+#searchInput:focus
+{
+    outline: none !important;
+}
+.weather-card 
+{
+    background-color: #1e202b;
+    color: #bfc1c8;
+    border: 1px solid rgba(136, 138, 138, 0.1);
+    border-radius: 10px;
+   
+}
+.today-date 
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+#today-c
+{
+    font-size: 60px
+}
+#temp-condition
+{
+    color: #009ad8;
+}
+.temp-condition
+{
+    color: #009ad8;
+}
