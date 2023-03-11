@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="loading" class="d-flex justify-content-center align-items-center">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid d-flex justify-content-center">
           <a class="navbar-brand text-white " href="#">
@@ -33,12 +41,12 @@
                     </div>
                     <p id="temp-condition" ></p>
                     <div class="wind">
-                        <span class="me-3 " id="humidity">
+                        <span class="me-1 " id="humidity">
                             
                             </span>
-                        <span  class="me-3 " id="wind_kph">
+                        <span  class="me-1" id="wind_kph">
                            </span>
-                        <span  class="me-3 " id=" wind_dir">
+                        <span  class="me-1 " id=" wind_dir">
                             
                             </span>
                     </div>
@@ -89,7 +97,7 @@
 
 
     </section>
-
+<script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

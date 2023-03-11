@@ -49,10 +49,10 @@ function dispalyTodayWeather()
      todayTemC.innerHTML =`${responseData.current.temp_c}<sup>o</sup>C` ;
      todayTempIcon.setAttribute("src" , `https:${responseData.current.condition.icon}`);
      tempCondition.innerHTML = responseData.current.condition.text;
-     humidity.innerHTML = `<i class="fa-solid fa-umbrella"></i>${responseData.current.humidity}%`;
+     humidity.innerHTML = `<i class="fa-solid fa-umbrella"></i> ${responseData.current.humidity}%`;
      wind_kph.innerHTML = ` <i class="fa-solid fa-wind"></i>
-     ${responseData.current.wind_kph}km/h` ;
-     wind_dir.innerHTML = `<i class="fa-regular fa-compass"></i>${responseData.current.wind_dir}` ;
+      ${responseData.current.wind_kph}km/h` ;
+     wind_dir.innerHTML = `<i class="fa-regular fa-compass"></i> ${responseData.current.wind_dir}` ;
      
 
 
@@ -74,6 +74,14 @@ tempConditions[i].innerHTML = responseData.forecast.forecastday[i+1].day.conditi
     }
 
 }
-// console.log(new Date(2023-03-12).getDay())
-// let date = new Date();
-// console.log(date.getDate(), months[date.getMonth()])
+
+$(document).ready(function()
+{
+ $('.sk-folding-cube').fadeOut(3000 , function()
+ {
+  $('#loading').fadeOut(500 , function()
+  {
+    $('#loading').remove();
+  });
+  })
+})
